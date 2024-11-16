@@ -28,9 +28,11 @@ export default function ChatPage(){
     }, [])
     return(
         <div>
-            <div>Chat de ...... {username}</div>
+            <div className="container">
+            <div className="text-center mt-4"><span className="fw-bold mt-4">Chat de ...... </span>{username}</div>
             <MessageList messages = {messages}></MessageList>
             <MessageForm onMessagesSet = {fethMessages}></MessageForm>
+            </div>
         </div>
     );
 }

@@ -18,10 +18,10 @@ export default function Home() {
   }
   return (
     <div>
-      <h1>Chat</h1>
-      <form onSubmit={haddleSubmit}>
-        <input value={username} onChange={(e) => setUsername(e.target.value)} type="text" placeholder="ingrese el nombre"></input>
-        <button>Enviar</button>
+      <form className="container flex mt-5" onSubmit={haddleSubmit}>
+      <h1 className="text-center">Chat</h1>
+        <input value={username} className="form-control" onChange={(e) => setUsername(e.target.value)} type="text" placeholder="ingrese el nombre"></input>
+        <button className="btn btn-success mt-2 w-100" >Enviar</button>
       </form>
     </div>
   );

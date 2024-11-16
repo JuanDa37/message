@@ -30,8 +30,8 @@ export default function MessageForm({ onMessagesSet }){
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <textarea value={content} onChange = {(e) => setContent(e.target.value)} rows={3} placeholder="Escribe un mensaje"></textarea>
-                <button>Enviar</button>
+                <textarea value={content} className="form-control mb-2" onChange = {(e) => setContent(e.target.value)} rows={3} placeholder="Escribe un mensaje"></textarea>
+                <button className="btn btn-dark w-100" >Enviar</button>
             </form>
         </div>
     )

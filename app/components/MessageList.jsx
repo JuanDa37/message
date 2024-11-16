@@ -4,7 +4,7 @@ export default function MessageList({ messages }){
             {
                 messages?.map((message) => (
                     <div key={message.id} style={ { marginBottom: 20 + 'px' } }>
-                        <span>{message.author.name}: {message.content}</span>
+                        <span><span className="fw-bold">{message.author.name}: </span> {message.content}</span>
                     </div>
                 ))
             }
